@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # -------- Lab OpenStack All in One by DevStack -------
+#
+# Contact me: truongdinhtrongctim@gmail.com
+#
 # Requirements:
 #   + VPS for this lab: 3cpu / 8G 
 #   + Only one card public 
