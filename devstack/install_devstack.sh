@@ -82,7 +82,7 @@ printf "Reboot server after installing updates ... \n" >> $pwd_log
 
 # --- reboot server ---
 while true; do
-    read -p "\n\n Do you wish to reboot this server?" yn
+    read -p "Do you wish to reboot this server?" yn
     case $yn in
         [Yy]* ) reboot; break;;
         [Nn]* ) exit;;
