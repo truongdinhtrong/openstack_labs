@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# -------- Lab OpenStack All in One by DevStack -------
+# -------- Lab OpenStack All in One by DevStack Victoria -------
 #
 # Contact me: truongdinhtrongctim@gmail.com
 #
