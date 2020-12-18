@@ -15,7 +15,7 @@
 # - Glance:
 # + list, show image:
 #   openstack image list
-#   openstack image show [NAME image]
+#   openstack image show [NAME]
 # + create image: 
 #   wget https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.2.2004-20200611.2.x86_64.qcow2
 #   openstack image create --disk-format qcow2 --container-format bare --public --file CentOS-8-GenericCloud-8.2.2004-20200611.2.x86_64.qcow2 CentOS-8-GenericCloud-8.2.200
