@@ -184,17 +184,15 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Repair Environment")
-			#Done
             RepairEnv
             ;;
         "Install DevStack")
-			#Done 
             InstallDevStack
             ;;
         "Quit")
             break
             ;;
-                *)
+            *)
             echo "invalid option $REPLY"
             ;;
     esac
