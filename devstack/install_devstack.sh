@@ -9,7 +9,17 @@
 #   + Only one card public 
 #   + OS: Ubuntu 18.04 x64 
 #   + Remove netplan, use ifupdown (openvswitch)
-# ------------------------------------------------------
+# --------------------------------------------------------------
+
+# --- Openstack console cmd ---
+# - Glance:
+# openstack image list
+# openstack image show [NAME image]
+# openstack image create --disk-format qcow2 --container-format bare --public --file CentOS-8-GenericCloud-8.2.2004-20200611.2.x86_64.qcow2 CentOS-8-GenericCloud-8.2.200
+# 
+# --------------------------------------------------------------
+
+
 
 
 # --- log dir ---
@@ -105,8 +115,7 @@ useradd -s /bin/bash -d $home_stack -m stack
 
 # --- use cmd sudo don't need enter password ---
 printf "\nAdd user stack -------------- \n" >> $pwd_log
-echo "stack ALL=(ALL) NOPASSWD: ALL"|tee /etc/sudoers.d/stack
-
+ll 
 # --- create local.conf ---
 localconfig="
 [[local|localrc]]
@@ -182,9 +191,9 @@ do
         "Quit")
             break
             ;;
-			 *)
-			echo "invalid option $REPLY"
-			;;
+                *)
+            echo "invalid option $REPLY"
+            ;;
     esac
 done
 
